@@ -1,6 +1,6 @@
 ckpts/
 data/
-visulaizer/
+visualizer/
 modules/RN50x16.pt
 modules/ViT-B-16.pt
 modules/ViT-B-32.pt
