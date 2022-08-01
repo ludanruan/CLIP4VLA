@@ -1,0 +1,668 @@
+2022-03-03 10:21:48,184:INFO: device: cuda:3 n_gpu: 4
+2022-03-03 10:21:48,193:INFO: Effective parameters:
+2022-03-03 10:21:48,193:INFO: device: cuda:2 n_gpu: 4
+2022-03-03 10:21:48,193:INFO:   <<< audio_channel: 2
+2022-03-03 10:21:48,193:INFO: device: cuda:1 n_gpu: 4
+2022-03-03 10:21:48,194:INFO:   <<< audio_complement: True
+2022-03-03 10:21:48,194:INFO:   <<< audio_dim: 512
+2022-03-03 10:21:48,194:INFO:   <<< audio_model: audio-clip
+2022-03-03 10:21:48,194:INFO:   <<< audio_num_hidden_layers: 12
+2022-03-03 10:21:48,194:INFO:   <<< audio_path: ../data/msrvtt/audios_16k
+2022-03-03 10:21:48,194:INFO:   <<< audio_rate: 16000
+2022-03-03 10:21:48,195:INFO:   <<< audio_tokenlen: 1
+2022-03-03 10:21:48,195:INFO:   <<< batch_size: 128
+2022-03-03 10:21:48,195:INFO:   <<< batch_size_val: 64
+2022-03-03 10:21:48,195:INFO:   <<< bert_model: None
+2022-03-03 10:21:48,195:INFO:   <<< cache_dir: 
+2022-03-03 10:21:48,196:INFO:   <<< checkpoint_model: pytorch_model.bin.checkpoint
+2022-03-03 10:21:48,196:INFO:   <<< coef_lr: 0.0002
+2022-03-03 10:21:48,196:INFO:   <<< cross_model: cross-base
+2022-03-03 10:21:48,196:INFO:   <<< cross_num_hidden_layers: 4
+2022-03-03 10:21:48,196:INFO:   <<< data_path: data/msrvtt/MSRVTT_data.json
+2022-03-03 10:21:48,196:INFO:   <<< datatype: msrvtt
+2022-03-03 10:21:48,197:INFO:   <<< decoder_model: decoder-base
+2022-03-03 10:21:48,197:INFO:   <<< decoder_num_hidden_layers: 3
+2022-03-03 10:21:48,197:INFO:   <<< do_eval: False
+2022-03-03 10:21:48,197:INFO:   <<< do_lower_case: False
+2022-03-03 10:21:48,197:INFO:   <<< do_pretrain: False
+2022-03-03 10:21:48,197:INFO:   <<< do_train: True
+2022-03-03 10:21:48,198:INFO:   <<< do_visualize: False
+2022-03-03 10:21:48,198:INFO:   <<< enhance_single_modal: 0
+2022-03-03 10:21:48,198:INFO:   <<< epochs: 10
+2022-03-03 10:21:48,198:INFO:   <<< eval_frame_order: 0
+2022-03-03 10:21:48,198:INFO:   <<< expand_msrvtt_sentences: True
+2022-03-03 10:21:48,198:INFO:   <<< extend: 3
+2022-03-03 10:21:48,199:INFO:   <<< feature_framerate: 1
+2022-03-03 10:21:48,199:INFO:   <<< features_path: ../data/msrvtt/raw_frames
+2022-03-03 10:21:48,199:INFO:   <<< filter_video_id: False
+2022-03-03 10:21:48,199:INFO:   <<< fp16: False
+2022-03-03 10:21:48,199:INFO:   <<< fp16_opt_level: O1
+2022-03-03 10:21:48,199:INFO:   <<< freeze: clip.
+2022-03-03 10:21:48,199:INFO:   <<< freeze_layer_num: -1
+2022-03-03 10:21:48,200:INFO:   <<< gradient_accumulation_steps: 1
+2022-03-03 10:21:48,200:INFO:   <<< hard_K: 8
+2022-03-03 10:21:48,200:INFO:   <<< hard_negative: False
+2022-03-03 10:21:48,200:INFO:   <<< hard_negative_rate: 0.5
+2022-03-03 10:21:48,200:INFO:   <<< init_model: ../models/pre_trained/AudioClip_audioset+howto_with_initial_self_superised_control_token/pytorch_model.bin.pretrain.23
+2022-03-03 10:21:48,200:INFO:   <<< linear_patch: 2d
+2022-03-03 10:21:48,200:INFO:   <<< load_checkpoint: False
+2022-03-03 10:21:48,201:INFO:   <<< local_rank: 0
+2022-03-03 10:21:48,201:INFO:   <<< loss_func: tav_nce
+2022-03-03 10:21:48,201:INFO:   <<< lr: 0.0005
+2022-03-03 10:21:48,201:INFO:   <<< lr_decay: 0.9
+2022-03-03 10:21:48,201:INFO:   <<< margin: 0.1
+2022-03-03 10:21:48,201:INFO:   <<< max_audio_length: 16
+2022-03-03 10:21:48,202:INFO:   <<< max_frames: 12
+2022-03-03 10:21:48,202:INFO:   <<< max_words: 32
+2022-03-03 10:21:48,202:INFO:   <<< min_time: 10.0
+2022-03-03 10:21:48,202:INFO:   <<< min_words: 5
+2022-03-03 10:21:48,202:INFO:   <<< model_type: audioclip
+2022-03-03 10:21:48,202:INFO:   <<< multi_sentence: 1
+2022-03-03 10:21:48,202:INFO:   <<< n_display: 100
+2022-03-03 10:21:48,203:INFO:   <<< n_gpu: 1
+2022-03-03 10:21:48,203:INFO:   <<< n_pair: 1
+2022-03-03 10:21:48,203:INFO:   <<< negative_weighting: 1
+2022-03-03 10:21:48,203:INFO:   <<< no_audio_initialize: False
+2022-03-03 10:21:48,203:INFO:   <<< num_thread_reader: 4
+2022-03-03 10:21:48,203:INFO:   <<< output_dir: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k
+2022-03-03 10:21:48,204:INFO:   <<< pretrain_enhance_vmodal: False
+2022-03-03 10:21:48,204:INFO:   <<< pretrained_clip_name: ViT-B/32
+2022-03-03 10:21:48,204:INFO:   <<< rank: 0
+2022-03-03 10:21:48,204:INFO:   <<< raw_video_path: ../data/msrvtt/videos
+2022-03-03 10:21:48,204:INFO:   <<< refine_nce: False
+2022-03-03 10:21:48,204:INFO:   <<< retrieval_finetune: loose_seq
+2022-03-03 10:21:48,204:INFO:   <<< sampled_use_mil: False
+2022-03-03 10:21:48,205:INFO:   <<< seed: 42
+2022-03-03 10:21:48,205:INFO:   <<< slice_framepos: 2
+2022-03-03 10:21:48,205:INFO:   <<< stage_two: False
+2022-03-03 10:21:48,205:INFO:   <<< task_type: retrieval
+2022-03-03 10:21:48,205:INFO:   <<< text_num_hidden_layers: 12
+2022-03-03 10:21:48,205:INFO:   <<< train_csv: data/msrvtt/MSRVTT_train.9k.csv
+2022-03-03 10:21:48,205:INFO:   <<< train_frame_order: 0
+2022-03-03 10:21:48,206:INFO:   <<< train_sim_after_cross: True
+2022-03-03 10:21:48,206:INFO:   <<< type_vocab_size: 2
+2022-03-03 10:21:48,206:INFO:   <<< use_lmdb: False
+2022-03-03 10:21:48,206:INFO:   <<< use_mil: False
+2022-03-03 10:21:48,206:INFO:   <<< val_csv: data/msrvtt/MSRVTT_JSFUSION_test.csv
+2022-03-03 10:21:48,206:INFO:   <<< video_dim: 1024
+2022-03-03 10:21:48,207:INFO:   <<< visdom: False
+2022-03-03 10:21:48,207:INFO:   <<< visdom_host: localhost
+2022-03-03 10:21:48,207:INFO:   <<< visdom_path: visdom
+2022-03-03 10:21:48,207:INFO:   <<< visdom_port: 6008
+2022-03-03 10:21:48,207:INFO:   <<< visual_model: visual-base
+2022-03-03 10:21:48,207:INFO:   <<< visual_num_hidden_layers: 6
+2022-03-03 10:21:48,208:INFO:   <<< warmup_proportion: 0.1
+2022-03-03 10:21:48,208:INFO:   <<< with_bg_token: False
+2022-03-03 10:21:48,208:INFO:   <<< with_control_token: 0.5
+2022-03-03 10:21:48,208:INFO:   <<< with_decoder: False
+2022-03-03 10:21:48,208:INFO:   <<< with_self_supervised: False
+2022-03-03 10:21:48,208:INFO:   <<< world_size: 4
+2022-03-03 10:21:48,209:INFO: device: cuda:0 n_gpu: 4
+2022-03-03 10:21:48,680:INFO: loading archive file /dataset/28d47491/rld/CLIP4TVA/modules/audio-clip
+2022-03-03 10:21:48,682:INFO: Model config {
+  "normalized": true
+}
+
+2022-03-03 10:21:48,683:INFO: Weight doesn't exsits. /dataset/28d47491/rld/CLIP4TVA/modules/audio-clip/clip-audio.pytorch.bin
+2022-03-03 10:21:48,683:INFO: loading archive file /dataset/28d47491/rld/CLIP4TVA/modules/cross-base
+2022-03-03 10:21:48,683:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "name": "cross-base",
+  "num_attention_heads": 8,
+  "num_hidden_layers": 2,
+  "type_vocab_size": 3,
+  "vocab_size": 512
+}
+
+2022-03-03 10:21:48,684:INFO: Weight doesn't exsits. /dataset/28d47491/rld/CLIP4TVA/modules/cross-base/cross_pytorch_model.bin
+2022-03-03 10:21:48,684:INFO: loading archive file /dataset/28d47491/rld/CLIP4TVA/modules/decoder-base
+2022-03-03 10:21:48,684:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "name": "decoder-base",
+  "num_attention_heads": 8,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 3,
+  "vocab_size": 49410
+}
+
+2022-03-03 10:21:48,685:INFO: Weight doesn't exsits. /dataset/28d47491/rld/CLIP4TVA/modules/decoder-base/decoder_pytorch_model.bin
+2022-03-03 10:21:49,244:WARNING: Stage-One:True, Stage-Two:False
+2022-03-03 10:21:49,245:WARNING: Test retrieval after cross encoder.
+2022-03-03 10:21:49,245:WARNING: Fill blank audio with the most similar audio within batch.
+2022-03-03 10:21:49,245:WARNING: 	 embed_dim: 512
+2022-03-03 10:21:49,245:WARNING: 	 image_resolution: 224
+2022-03-03 10:21:49,246:WARNING: 	 vision_layers: 12
+2022-03-03 10:21:49,246:WARNING: 	 vision_width: 768
+2022-03-03 10:21:49,246:WARNING: 	 vision_patch_size: 32
+2022-03-03 10:21:49,246:WARNING: 	 context_length: 77
+2022-03-03 10:21:49,246:WARNING: 	 vocab_size: 49411
+2022-03-03 10:21:49,246:WARNING: 	 transformer_width: 512
+2022-03-03 10:21:49,246:WARNING: 	 transformer_heads: 8
+2022-03-03 10:21:49,247:WARNING: 	 transformer_layers: 12
+2022-03-03 10:21:49,247:WARNING: 	 loss_type:tav_nce
+2022-03-03 10:21:49,247:WARNING: 	 linear_patch: 2d
+2022-03-03 10:21:49,247:WARNING: 	 cut_top_layer: 0
+2022-03-03 10:21:51,727:WARNING: Set cross_config.num_hidden_layers: 4.
+2022-03-03 10:22:04,427:INFO: --------------------
+2022-03-03 10:22:04,428:INFO: Weights of AudioClip not initialized from initial_model: 
+   cross.embeddings.position_embeddings.weight
+   cross.embeddings.token_type_embeddings.weight
+   cross.embeddings.LayerNorm.weight
+   cross.embeddings.LayerNorm.bias
+   cross.encoder.layer.0.attention.self.query.weight
+   cross.encoder.layer.0.attention.self.query.bias
+   cross.encoder.layer.0.attention.self.key.weight
+   cross.encoder.layer.0.attention.self.key.bias
+   cross.encoder.layer.0.attention.self.value.weight
+   cross.encoder.layer.0.attention.self.value.bias
+   cross.encoder.layer.0.attention.output.dense.weight
+   cross.encoder.layer.0.attention.output.dense.bias
+   cross.encoder.layer.0.attention.output.LayerNorm.weight
+   cross.encoder.layer.0.attention.output.LayerNorm.bias
+   cross.encoder.layer.0.intermediate.dense.weight
+   cross.encoder.layer.0.intermediate.dense.bias
+   cross.encoder.layer.0.output.dense.weight
+   cross.encoder.layer.0.output.dense.bias
+   cross.encoder.layer.0.output.LayerNorm.weight
+   cross.encoder.layer.0.output.LayerNorm.bias
+   cross.encoder.layer.1.attention.self.query.weight
+   cross.encoder.layer.1.attention.self.query.bias
+   cross.encoder.layer.1.attention.self.key.weight
+   cross.encoder.layer.1.attention.self.key.bias
+   cross.encoder.layer.1.attention.self.value.weight
+   cross.encoder.layer.1.attention.self.value.bias
+   cross.encoder.layer.1.attention.output.dense.weight
+   cross.encoder.layer.1.attention.output.dense.bias
+   cross.encoder.layer.1.attention.output.LayerNorm.weight
+   cross.encoder.layer.1.attention.output.LayerNorm.bias
+   cross.encoder.layer.1.intermediate.dense.weight
+   cross.encoder.layer.1.intermediate.dense.bias
+   cross.encoder.layer.1.output.dense.weight
+   cross.encoder.layer.1.output.dense.bias
+   cross.encoder.layer.1.output.LayerNorm.weight
+   cross.encoder.layer.1.output.LayerNorm.bias
+   cross.encoder.layer.2.attention.self.query.weight
+   cross.encoder.layer.2.attention.self.query.bias
+   cross.encoder.layer.2.attention.self.key.weight
+   cross.encoder.layer.2.attention.self.key.bias
+   cross.encoder.layer.2.attention.self.value.weight
+   cross.encoder.layer.2.attention.self.value.bias
+   cross.encoder.layer.2.attention.output.dense.weight
+   cross.encoder.layer.2.attention.output.dense.bias
+   cross.encoder.layer.2.attention.output.LayerNorm.weight
+   cross.encoder.layer.2.attention.output.LayerNorm.bias
+   cross.encoder.layer.2.intermediate.dense.weight
+   cross.encoder.layer.2.intermediate.dense.bias
+   cross.encoder.layer.2.output.dense.weight
+   cross.encoder.layer.2.output.dense.bias
+   cross.encoder.layer.2.output.LayerNorm.weight
+   cross.encoder.layer.2.output.LayerNorm.bias
+   cross.encoder.layer.3.attention.self.query.weight
+   cross.encoder.layer.3.attention.self.query.bias
+   cross.encoder.layer.3.attention.self.key.weight
+   cross.encoder.layer.3.attention.self.key.bias
+   cross.encoder.layer.3.attention.self.value.weight
+   cross.encoder.layer.3.attention.self.value.bias
+   cross.encoder.layer.3.attention.output.dense.weight
+   cross.encoder.layer.3.attention.output.dense.bias
+   cross.encoder.layer.3.attention.output.LayerNorm.weight
+   cross.encoder.layer.3.attention.output.LayerNorm.bias
+   cross.encoder.layer.3.intermediate.dense.weight
+   cross.encoder.layer.3.intermediate.dense.bias
+   cross.encoder.layer.3.output.dense.weight
+   cross.encoder.layer.3.output.dense.bias
+   cross.encoder.layer.3.output.LayerNorm.weight
+   cross.encoder.layer.3.output.LayerNorm.bias
+   cross.pooler.dense.weight
+   cross.pooler.dense.bias
+   similarity_dense.weight
+   similarity_dense.bias
+2022-03-03 10:22:04,428:INFO: Weights from AudioClip not used in initial_model: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2022-03-03 10:22:04,428:WARNING: Training all clip params. 
+2022-03-03 10:22:04,435:WARNING: Total Parameters:256.47M
+2022-03-03 10:22:04,436:WARNING: Total Training Parameters:256.47M
+2022-03-03 10:22:05,118:INFO: ***** Running test *****
+2022-03-03 10:22:05,119:INFO:   Num examples = 1000
+2022-03-03 10:22:05,119:INFO:   Batch size = 64
+2022-03-03 10:22:05,119:INFO:   Num steps = 16
+2022-03-03 10:22:23,366:INFO: ***** Running training *****
+2022-03-03 10:22:23,367:INFO:   Num examples = 180000
+2022-03-03 10:22:23,368:INFO:   Batch size = 128
+2022-03-03 10:22:23,368:INFO:   Num steps = 14060
+2022-03-03 10:26:19,724:INFO: Epoch: 1/10, Step: 100/1406, Lr: 0.000000007-0.000035562, Loss: 1.838201, Time/step: 2.363535
+2022-03-03 10:26:19,726:INFO: Loss items: tav_loose_seq:1.838
+2022-03-03 10:30:06,849:INFO: Epoch: 1/10, Step: 200/1406, Lr: 0.000000014-0.000071124, Loss: 1.322900, Time/step: 2.271215
+2022-03-03 10:30:06,851:INFO: Loss items: tav_loose_seq:1.323
+2022-03-03 10:33:53,581:INFO: Epoch: 1/10, Step: 300/1406, Lr: 0.000000021-0.000106686, Loss: 1.286719, Time/step: 2.267300
+2022-03-03 10:33:53,583:INFO: Loss items: tav_loose_seq:1.287
+2022-03-03 10:37:39,982:INFO: Epoch: 1/10, Step: 400/1406, Lr: 0.000000028-0.000142248, Loss: 1.180216, Time/step: 2.263987
+2022-03-03 10:37:39,984:INFO: Loss items: tav_loose_seq:1.180
+2022-03-03 10:41:26,410:INFO: Epoch: 1/10, Step: 500/1406, Lr: 0.000000036-0.000177809, Loss: 1.231940, Time/step: 2.264264
+2022-03-03 10:41:26,412:INFO: Loss items: tav_loose_seq:1.232
+2022-03-03 10:45:12,881:INFO: Epoch: 1/10, Step: 600/1406, Lr: 0.000000043-0.000213371, Loss: 1.094318, Time/step: 2.264686
+2022-03-03 10:45:12,882:INFO: Loss items: tav_loose_seq:1.094
+2022-03-03 10:48:59,495:INFO: Epoch: 1/10, Step: 700/1406, Lr: 0.000000050-0.000248933, Loss: 1.135826, Time/step: 2.266126
+2022-03-03 10:48:59,497:INFO: Loss items: tav_loose_seq:1.136
+2022-03-03 10:52:46,805:INFO: Epoch: 1/10, Step: 800/1406, Lr: 0.000000057-0.000284495, Loss: 1.014139, Time/step: 2.273074
+2022-03-03 10:52:46,806:INFO: Loss items: tav_loose_seq:1.014
+2022-03-03 10:56:33,314:INFO: Epoch: 1/10, Step: 900/1406, Lr: 0.000000064-0.000320057, Loss: 1.107940, Time/step: 2.265073
+2022-03-03 10:56:33,316:INFO: Loss items: tav_loose_seq:1.108
+2022-03-03 11:00:20,854:INFO: Epoch: 1/10, Step: 1000/1406, Lr: 0.000000071-0.000355619, Loss: 1.011153, Time/step: 2.275374
+2022-03-03 11:00:20,855:INFO: Loss items: tav_loose_seq:1.011
+2022-03-03 11:04:09,423:INFO: Epoch: 1/10, Step: 1100/1406, Lr: 0.000000078-0.000391181, Loss: 0.737096, Time/step: 2.285671
+2022-03-03 11:04:09,424:INFO: Loss items: tav_loose_seq:0.737
+2022-03-03 11:07:59,007:INFO: Epoch: 1/10, Step: 1200/1406, Lr: 0.000000085-0.000426743, Loss: 0.902830, Time/step: 2.295818
+2022-03-03 11:07:59,009:INFO: Loss items: tav_loose_seq:0.903
+2022-03-03 11:11:48,480:INFO: Epoch: 1/10, Step: 1300/1406, Lr: 0.000000092-0.000462304, Loss: 0.766145, Time/step: 2.294708
+2022-03-03 11:11:48,482:INFO: Loss items: tav_loose_seq:0.766
+2022-03-03 11:15:38,266:INFO: Epoch: 1/10, Step: 1400/1406, Lr: 0.000000100-0.000497866, Loss: 0.607635, Time/step: 2.297839
+2022-03-03 11:15:38,267:INFO: Loss items: tav_loose_seq:0.608
+2022-03-03 11:15:52,259:INFO: Epoch 1/10 Finished, Train Loss: 1.141835
+2022-03-03 11:15:54,231:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.0
+2022-03-03 11:17:24,626:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 11:17:24,679:INFO: 	>>> Retrival method:t_v  R@1: 0.4200 - R@5: 0.6990 - R@10: 0.8100 - Median R: 2.0
+2022-03-03 11:17:24,726:INFO: 	>>> Retrival method:t_a  R@1: 0.0280 - R@5: 0.0860 - R@10: 0.1320 - Median R: 93.5
+2022-03-03 11:17:24,774:INFO: 	>>> Retrival method:t_va  R@1: 0.4260 - R@5: 0.6990 - R@10: 0.8100 - Median R: 2.0
+2022-03-03 11:17:25,574:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.0, the R1 is: 0.4260
+2022-03-03 11:21:07,317:INFO: Epoch: 2/10, Step: 94/1406, Lr: 0.000000097-0.000486089, Loss: 0.936298, Time/step: 2.215986
+2022-03-03 11:21:07,320:INFO: Loss items: tav_loose_seq:0.936
+2022-03-03 11:24:54,891:INFO: Epoch: 2/10, Step: 194/1406, Lr: 0.000000097-0.000484193, Loss: 0.729272, Time/step: 2.275707
+2022-03-03 11:24:54,893:INFO: Loss items: tav_loose_seq:0.729
+2022-03-03 11:28:43,641:INFO: Epoch: 2/10, Step: 294/1406, Lr: 0.000000096-0.000482180, Loss: 0.632842, Time/step: 2.287481
+2022-03-03 11:28:43,643:INFO: Loss items: tav_loose_seq:0.633
+2022-03-03 11:32:31,352:INFO: Epoch: 2/10, Step: 394/1406, Lr: 0.000000096-0.000480051, Loss: 0.860104, Time/step: 2.277089
+2022-03-03 11:32:31,354:INFO: Loss items: tav_loose_seq:0.860
+2022-03-03 11:36:18,446:INFO: Epoch: 2/10, Step: 494/1406, Lr: 0.000000096-0.000477807, Loss: 0.754784, Time/step: 2.270913
+2022-03-03 11:36:18,447:INFO: Loss items: tav_loose_seq:0.755
+2022-03-03 11:40:04,996:INFO: Epoch: 2/10, Step: 594/1406, Lr: 0.000000095-0.000475450, Loss: 0.815083, Time/step: 2.265480
+2022-03-03 11:40:04,997:INFO: Loss items: tav_loose_seq:0.815
+2022-03-03 11:43:51,836:INFO: Epoch: 2/10, Step: 694/1406, Lr: 0.000000095-0.000472979, Loss: 0.854308, Time/step: 2.268381
+2022-03-03 11:43:51,838:INFO: Loss items: tav_loose_seq:0.854
+2022-03-03 11:47:39,293:INFO: Epoch: 2/10, Step: 794/1406, Lr: 0.000000094-0.000470398, Loss: 0.665221, Time/step: 2.274544
+2022-03-03 11:47:39,294:INFO: Loss items: tav_loose_seq:0.665
+2022-03-03 11:51:26,750:INFO: Epoch: 2/10, Step: 894/1406, Lr: 0.000000094-0.000467706, Loss: 0.606340, Time/step: 2.274551
+2022-03-03 11:51:26,753:INFO: Loss items: tav_loose_seq:0.606
+2022-03-03 11:55:14,194:INFO: Epoch: 2/10, Step: 994/1406, Lr: 0.000000093-0.000464906, Loss: 0.685673, Time/step: 2.274407
+2022-03-03 11:55:14,196:INFO: Loss items: tav_loose_seq:0.686
+2022-03-03 11:59:02,231:INFO: Epoch: 2/10, Step: 1094/1406, Lr: 0.000000092-0.000461999, Loss: 0.766500, Time/step: 2.280349
+2022-03-03 11:59:02,232:INFO: Loss items: tav_loose_seq:0.766
+2022-03-03 12:02:49,889:INFO: Epoch: 2/10, Step: 1194/1406, Lr: 0.000000092-0.000458986, Loss: 0.883817, Time/step: 2.276565
+2022-03-03 12:02:49,891:INFO: Loss items: tav_loose_seq:0.884
+2022-03-03 12:06:39,566:INFO: Epoch: 2/10, Step: 1294/1406, Lr: 0.000000091-0.000455868, Loss: 0.853460, Time/step: 2.296745
+2022-03-03 12:06:39,568:INFO: Loss items: tav_loose_seq:0.853
+2022-03-03 12:10:28,921:INFO: Epoch: 2/10, Step: 1394/1406, Lr: 0.000000091-0.000452648, Loss: 0.601402, Time/step: 2.293528
+2022-03-03 12:10:28,923:INFO: Loss items: tav_loose_seq:0.601
+2022-03-03 12:10:56,468:INFO: Epoch 2/10 Finished, Train Loss: 0.733764
+2022-03-03 12:10:58,497:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.1
+2022-03-03 12:12:13,606:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 12:12:13,660:INFO: 	>>> Retrival method:t_v  R@1: 0.4330 - R@5: 0.7350 - R@10: 0.8160 - Median R: 2.0
+2022-03-03 12:12:13,711:INFO: 	>>> Retrival method:t_a  R@1: 0.0080 - R@5: 0.0500 - R@10: 0.0800 - Median R: 155.0
+2022-03-03 12:12:13,758:INFO: 	>>> Retrival method:t_va  R@1: 0.4320 - R@5: 0.7340 - R@10: 0.8160 - Median R: 2.0
+2022-03-03 12:12:14,565:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.1, the R1 is: 0.4330
+2022-03-03 12:15:40,273:INFO: Epoch: 3/10, Step: 88/1406, Lr: 0.000000090-0.000449326, Loss: 0.581005, Time/step: 2.055295
+2022-03-03 12:15:40,274:INFO: Loss items: tav_loose_seq:0.581
+2022-03-03 12:19:25,021:INFO: Epoch: 3/10, Step: 188/1406, Lr: 0.000000089-0.000445905, Loss: 0.410397, Time/step: 2.247461
+2022-03-03 12:19:25,023:INFO: Loss items: tav_loose_seq:0.410
+2022-03-03 12:23:15,685:INFO: Epoch: 3/10, Step: 288/1406, Lr: 0.000000088-0.000442386, Loss: 0.543535, Time/step: 2.306615
+2022-03-03 12:23:15,688:INFO: Loss items: tav_loose_seq:0.544
+2022-03-03 12:27:06,596:INFO: Epoch: 3/10, Step: 388/1406, Lr: 0.000000088-0.000438771, Loss: 0.411862, Time/step: 2.309077
+2022-03-03 12:27:06,598:INFO: Loss items: tav_loose_seq:0.412
+2022-03-03 12:30:56,863:INFO: Epoch: 3/10, Step: 488/1406, Lr: 0.000000087-0.000435062, Loss: 0.560487, Time/step: 2.302639
+2022-03-03 12:30:56,864:INFO: Loss items: tav_loose_seq:0.560
+2022-03-03 12:34:46,849:INFO: Epoch: 3/10, Step: 588/1406, Lr: 0.000000086-0.000431260, Loss: 0.514905, Time/step: 2.299845
+2022-03-03 12:34:46,851:INFO: Loss items: tav_loose_seq:0.515
+2022-03-03 12:38:36,546:INFO: Epoch: 3/10, Step: 688/1406, Lr: 0.000000085-0.000427368, Loss: 0.647446, Time/step: 2.296943
+2022-03-03 12:38:36,548:INFO: Loss items: tav_loose_seq:0.647
+2022-03-03 12:42:26,386:INFO: Epoch: 3/10, Step: 788/1406, Lr: 0.000000085-0.000423388, Loss: 0.601361, Time/step: 2.298385
+2022-03-03 12:42:26,388:INFO: Loss items: tav_loose_seq:0.601
+2022-03-03 12:46:16,719:INFO: Epoch: 3/10, Step: 888/1406, Lr: 0.000000084-0.000419320, Loss: 0.457107, Time/step: 2.303308
+2022-03-03 12:46:16,721:INFO: Loss items: tav_loose_seq:0.457
+2022-03-03 12:50:06,718:INFO: Epoch: 3/10, Step: 988/1406, Lr: 0.000000083-0.000415169, Loss: 0.387916, Time/step: 2.299966
+2022-03-03 12:50:06,720:INFO: Loss items: tav_loose_seq:0.388
+2022-03-03 12:53:55,177:INFO: Epoch: 3/10, Step: 1088/1406, Lr: 0.000000082-0.000410935, Loss: 0.538374, Time/step: 2.284571
+2022-03-03 12:53:55,179:INFO: Loss items: tav_loose_seq:0.538
+2022-03-03 12:57:45,748:INFO: Epoch: 3/10, Step: 1188/1406, Lr: 0.000000081-0.000406620, Loss: 0.622453, Time/step: 2.305689
+2022-03-03 12:57:45,750:INFO: Loss items: tav_loose_seq:0.622
+2022-03-03 13:01:35,786:INFO: Epoch: 3/10, Step: 1288/1406, Lr: 0.000000080-0.000402227, Loss: 0.478476, Time/step: 2.300351
+2022-03-03 13:01:35,787:INFO: Loss items: tav_loose_seq:0.478
+2022-03-03 13:05:26,108:INFO: Epoch: 3/10, Step: 1388/1406, Lr: 0.000000080-0.000397759, Loss: 0.295883, Time/step: 2.303204
+2022-03-03 13:05:26,110:INFO: Loss items: tav_loose_seq:0.296
+2022-03-03 13:06:07,534:INFO: Epoch 3/10 Finished, Train Loss: 0.546212
+2022-03-03 13:06:09,479:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2
+2022-03-03 13:07:25,462:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 13:07:25,516:INFO: 	>>> Retrival method:t_v  R@1: 0.4630 - R@5: 0.7360 - R@10: 0.8350 - Median R: 2.0
+2022-03-03 13:07:25,566:INFO: 	>>> Retrival method:t_a  R@1: 0.0100 - R@5: 0.0570 - R@10: 0.0960 - Median R: 153.5
+2022-03-03 13:07:25,613:INFO: 	>>> Retrival method:t_va  R@1: 0.4620 - R@5: 0.7350 - R@10: 0.8350 - Median R: 2.0
+2022-03-03 13:07:26,396:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 13:10:41,200:INFO: Epoch: 4/10, Step: 82/1406, Lr: 0.000000079-0.000393216, Loss: 0.394870, Time/step: 1.946060
+2022-03-03 13:10:41,202:INFO: Loss items: tav_loose_seq:0.395
+2022-03-03 13:14:25,566:INFO: Epoch: 4/10, Step: 182/1406, Lr: 0.000000078-0.000388602, Loss: 0.476535, Time/step: 2.243635
+2022-03-03 13:14:25,568:INFO: Loss items: tav_loose_seq:0.477
+2022-03-03 13:18:11,874:INFO: Epoch: 4/10, Step: 282/1406, Lr: 0.000000077-0.000383919, Loss: 0.266557, Time/step: 2.263062
+2022-03-03 13:18:11,876:INFO: Loss items: tav_loose_seq:0.267
+2022-03-03 13:21:59,697:INFO: Epoch: 4/10, Step: 382/1406, Lr: 0.000000076-0.000379169, Loss: 0.547141, Time/step: 2.278206
+2022-03-03 13:21:59,699:INFO: Loss items: tav_loose_seq:0.547
+2022-03-03 13:25:47,262:INFO: Epoch: 4/10, Step: 482/1406, Lr: 0.000000075-0.000374354, Loss: 0.424522, Time/step: 2.275631
+2022-03-03 13:25:47,264:INFO: Loss items: tav_loose_seq:0.425
+2022-03-03 13:29:31,838:INFO: Epoch: 4/10, Step: 582/1406, Lr: 0.000000074-0.000369478, Loss: 0.441020, Time/step: 2.245737
+2022-03-03 13:29:31,840:INFO: Loss items: tav_loose_seq:0.441
+2022-03-03 13:33:16,828:INFO: Epoch: 4/10, Step: 682/1406, Lr: 0.000000073-0.000364542, Loss: 0.409228, Time/step: 2.249881
+2022-03-03 13:33:16,831:INFO: Loss items: tav_loose_seq:0.409
+2022-03-03 13:37:06,790:INFO: Epoch: 4/10, Step: 782/1406, Lr: 0.000000072-0.000359548, Loss: 0.528885, Time/step: 2.299588
+2022-03-03 13:37:06,792:INFO: Loss items: tav_loose_seq:0.529
+2022-03-03 13:40:59,909:INFO: Epoch: 4/10, Step: 882/1406, Lr: 0.000000071-0.000354500, Loss: 0.540262, Time/step: 2.331171
+2022-03-03 13:40:59,911:INFO: Loss items: tav_loose_seq:0.540
+2022-03-03 13:44:54,275:INFO: Epoch: 4/10, Step: 982/1406, Lr: 0.000000070-0.000349400, Loss: 0.519207, Time/step: 2.343644
+2022-03-03 13:44:54,278:INFO: Loss items: tav_loose_seq:0.519
+2022-03-03 13:48:47,721:INFO: Epoch: 4/10, Step: 1082/1406, Lr: 0.000000069-0.000344250, Loss: 0.571686, Time/step: 2.334428
+2022-03-03 13:48:47,723:INFO: Loss items: tav_loose_seq:0.572
+2022-03-03 13:52:41,557:INFO: Epoch: 4/10, Step: 1182/1406, Lr: 0.000000068-0.000339053, Loss: 0.328549, Time/step: 2.338334
+2022-03-03 13:52:41,559:INFO: Loss items: tav_loose_seq:0.329
+2022-03-03 13:56:35,785:INFO: Epoch: 4/10, Step: 1282/1406, Lr: 0.000000067-0.000333811, Loss: 0.612239, Time/step: 2.342265
+2022-03-03 13:56:35,787:INFO: Loss items: tav_loose_seq:0.612
+2022-03-03 14:00:28,950:INFO: Epoch: 4/10, Step: 1382/1406, Lr: 0.000000066-0.000328528, Loss: 0.436467, Time/step: 2.331629
+2022-03-03 14:00:28,952:INFO: Loss items: tav_loose_seq:0.436
+2022-03-03 14:01:24,593:INFO: Epoch 4/10 Finished, Train Loss: 0.420819
+2022-03-03 14:01:26,618:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.3
+2022-03-03 14:02:43,293:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 14:02:43,348:INFO: 	>>> Retrival method:t_v  R@1: 0.4430 - R@5: 0.7250 - R@10: 0.8240 - Median R: 2.0
+2022-03-03 14:02:43,398:INFO: 	>>> Retrival method:t_a  R@1: 0.0110 - R@5: 0.0400 - R@10: 0.0630 - Median R: 194.0
+2022-03-03 14:02:43,445:INFO: 	>>> Retrival method:t_va  R@1: 0.4430 - R@5: 0.7250 - R@10: 0.8240 - Median R: 2.0
+2022-03-03 14:02:44,255:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 14:05:44,281:INFO: Epoch: 5/10, Step: 76/1406, Lr: 0.000000065-0.000323206, Loss: 0.309458, Time/step: 1.798247
+2022-03-03 14:05:44,284:INFO: Loss items: tav_loose_seq:0.309
+2022-03-03 14:09:30,905:INFO: Epoch: 5/10, Step: 176/1406, Lr: 0.000000064-0.000317847, Loss: 0.310034, Time/step: 2.266214
+2022-03-03 14:09:30,908:INFO: Loss items: tav_loose_seq:0.310
+2022-03-03 14:13:20,184:INFO: Epoch: 5/10, Step: 276/1406, Lr: 0.000000062-0.000312454, Loss: 0.268344, Time/step: 2.292755
+2022-03-03 14:13:20,186:INFO: Loss items: tav_loose_seq:0.268
+2022-03-03 14:17:08,860:INFO: Epoch: 5/10, Step: 376/1406, Lr: 0.000000061-0.000307030, Loss: 0.386548, Time/step: 2.286740
+2022-03-03 14:17:08,862:INFO: Loss items: tav_loose_seq:0.387
+2022-03-03 14:20:58,849:INFO: Epoch: 5/10, Step: 476/1406, Lr: 0.000000060-0.000301577, Loss: 0.267423, Time/step: 2.299871
+2022-03-03 14:20:58,852:INFO: Loss items: tav_loose_seq:0.267
+2022-03-03 14:24:48,253:INFO: Epoch: 5/10, Step: 576/1406, Lr: 0.000000059-0.000296099, Loss: 0.445518, Time/step: 2.293998
+2022-03-03 14:24:48,254:INFO: Loss items: tav_loose_seq:0.446
+2022-03-03 14:28:37,273:INFO: Epoch: 5/10, Step: 676/1406, Lr: 0.000000058-0.000290598, Loss: 0.276736, Time/step: 2.290185
+2022-03-03 14:28:37,275:INFO: Loss items: tav_loose_seq:0.277
+2022-03-03 14:32:26,031:INFO: Epoch: 5/10, Step: 776/1406, Lr: 0.000000057-0.000285076, Loss: 0.317417, Time/step: 2.287556
+2022-03-03 14:32:26,033:INFO: Loss items: tav_loose_seq:0.317
+2022-03-03 14:36:14,267:INFO: Epoch: 5/10, Step: 876/1406, Lr: 0.000000056-0.000279537, Loss: 0.382737, Time/step: 2.282336
+2022-03-03 14:36:14,269:INFO: Loss items: tav_loose_seq:0.383
+2022-03-03 14:40:03,494:INFO: Epoch: 5/10, Step: 976/1406, Lr: 0.000000055-0.000273983, Loss: 0.359237, Time/step: 2.292248
+2022-03-03 14:40:03,496:INFO: Loss items: tav_loose_seq:0.359
+2022-03-03 14:43:52,575:INFO: Epoch: 5/10, Step: 1076/1406, Lr: 0.000000054-0.000268417, Loss: 0.339634, Time/step: 2.290789
+2022-03-03 14:43:52,577:INFO: Loss items: tav_loose_seq:0.340
+2022-03-03 14:47:41,345:INFO: Epoch: 5/10, Step: 1176/1406, Lr: 0.000000053-0.000262842, Loss: 0.377348, Time/step: 2.287681
+2022-03-03 14:47:41,347:INFO: Loss items: tav_loose_seq:0.377
+2022-03-03 14:51:29,875:INFO: Epoch: 5/10, Step: 1276/1406, Lr: 0.000000051-0.000257261, Loss: 0.333415, Time/step: 2.285279
+2022-03-03 14:51:29,877:INFO: Loss items: tav_loose_seq:0.333
+2022-03-03 14:55:18,561:INFO: Epoch: 5/10, Step: 1376/1406, Lr: 0.000000050-0.000251676, Loss: 0.286794, Time/step: 2.286831
+2022-03-03 14:55:18,562:INFO: Loss items: tav_loose_seq:0.287
+2022-03-03 14:56:27,163:INFO: Epoch 5/10 Finished, Train Loss: 0.335462
+2022-03-03 14:56:29,234:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.4
+2022-03-03 14:57:44,912:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 14:57:44,966:INFO: 	>>> Retrival method:t_v  R@1: 0.4370 - R@5: 0.7300 - R@10: 0.8160 - Median R: 2.0
+2022-03-03 14:57:45,017:INFO: 	>>> Retrival method:t_a  R@1: 0.0060 - R@5: 0.0230 - R@10: 0.0470 - Median R: 193.0
+2022-03-03 14:57:45,064:INFO: 	>>> Retrival method:t_va  R@1: 0.4370 - R@5: 0.7300 - R@10: 0.8160 - Median R: 2.0
+2022-03-03 14:57:45,852:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 15:00:35,622:INFO: Epoch: 6/10, Step: 70/1406, Lr: 0.000000049-0.000246090, Loss: 0.177185, Time/step: 1.696854
+2022-03-03 15:00:35,625:INFO: Loss items: tav_loose_seq:0.177
+2022-03-03 15:04:27,786:INFO: Epoch: 6/10, Step: 170/1406, Lr: 0.000000048-0.000240506, Loss: 0.289464, Time/step: 2.321606
+2022-03-03 15:04:27,787:INFO: Loss items: tav_loose_seq:0.289
+2022-03-03 15:08:25,579:INFO: Epoch: 6/10, Step: 270/1406, Lr: 0.000000047-0.000234927, Loss: 0.331102, Time/step: 2.377918
+2022-03-03 15:08:25,581:INFO: Loss items: tav_loose_seq:0.331
+2022-03-03 15:12:22,962:INFO: Epoch: 6/10, Step: 370/1406, Lr: 0.000000046-0.000229355, Loss: 0.364117, Time/step: 2.373803
+2022-03-03 15:12:22,964:INFO: Loss items: tav_loose_seq:0.364
+2022-03-03 15:16:20,407:INFO: Epoch: 6/10, Step: 470/1406, Lr: 0.000000045-0.000223794, Loss: 0.320700, Time/step: 2.374423
+2022-03-03 15:16:20,409:INFO: Loss items: tav_loose_seq:0.321
+2022-03-03 15:20:17,194:INFO: Epoch: 6/10, Step: 570/1406, Lr: 0.000000044-0.000218246, Loss: 0.243223, Time/step: 2.367852
+2022-03-03 15:20:17,198:INFO: Loss items: tav_loose_seq:0.243
+2022-03-03 15:24:13,938:INFO: Epoch: 6/10, Step: 670/1406, Lr: 0.000000043-0.000212713, Loss: 0.311928, Time/step: 2.367396
+2022-03-03 15:24:13,940:INFO: Loss items: tav_loose_seq:0.312
+2022-03-03 15:28:12,360:INFO: Epoch: 6/10, Step: 770/1406, Lr: 0.000000041-0.000207199, Loss: 0.238278, Time/step: 2.384189
+2022-03-03 15:28:12,362:INFO: Loss items: tav_loose_seq:0.238
+2022-03-03 15:32:09,843:INFO: Epoch: 6/10, Step: 870/1406, Lr: 0.000000040-0.000201707, Loss: 0.262469, Time/step: 2.374805
+2022-03-03 15:32:09,851:INFO: Loss items: tav_loose_seq:0.262
+2022-03-03 15:36:07,914:INFO: Epoch: 6/10, Step: 970/1406, Lr: 0.000000039-0.000196239, Loss: 0.248817, Time/step: 2.380624
+2022-03-03 15:36:07,916:INFO: Loss items: tav_loose_seq:0.249
+2022-03-03 15:40:05,806:INFO: Epoch: 6/10, Step: 1070/1406, Lr: 0.000000038-0.000190797, Loss: 0.219612, Time/step: 2.378890
+2022-03-03 15:40:05,807:INFO: Loss items: tav_loose_seq:0.220
+2022-03-03 15:44:00,543:INFO: Epoch: 6/10, Step: 1170/1406, Lr: 0.000000037-0.000185385, Loss: 0.297756, Time/step: 2.347353
+2022-03-03 15:44:00,545:INFO: Loss items: tav_loose_seq:0.298
+2022-03-03 15:47:53,963:INFO: Epoch: 6/10, Step: 1270/1406, Lr: 0.000000036-0.000180006, Loss: 0.181642, Time/step: 2.334181
+2022-03-03 15:47:53,965:INFO: Loss items: tav_loose_seq:0.182
+2022-03-03 15:51:48,127:INFO: Epoch: 6/10, Step: 1370/1406, Lr: 0.000000035-0.000174661, Loss: 0.178930, Time/step: 2.341616
+2022-03-03 15:51:48,129:INFO: Loss items: tav_loose_seq:0.179
+2022-03-03 15:53:11,645:INFO: Epoch 6/10 Finished, Train Loss: 0.258962
+2022-03-03 15:53:13,639:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.5
+2022-03-03 15:54:30,479:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 15:54:30,534:INFO: 	>>> Retrival method:t_v  R@1: 0.4330 - R@5: 0.7310 - R@10: 0.8300 - Median R: 2.0
+2022-03-03 15:54:30,585:INFO: 	>>> Retrival method:t_a  R@1: 0.0040 - R@5: 0.0220 - R@10: 0.0410 - Median R: 208.5
+2022-03-03 15:54:30,632:INFO: 	>>> Retrival method:t_va  R@1: 0.4310 - R@5: 0.7300 - R@10: 0.8310 - Median R: 2.0
+2022-03-03 15:54:31,426:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 15:57:13,078:INFO: Epoch: 7/10, Step: 64/1406, Lr: 0.000000034-0.000169354, Loss: 0.238557, Time/step: 1.615143
+2022-03-03 15:57:13,080:INFO: Loss items: tav_loose_seq:0.239
+2022-03-03 16:01:09,937:INFO: Epoch: 7/10, Step: 164/1406, Lr: 0.000000033-0.000164087, Loss: 0.140338, Time/step: 2.368564
+2022-03-03 16:01:09,939:INFO: Loss items: tav_loose_seq:0.140
+2022-03-03 16:05:00,571:INFO: Epoch: 7/10, Step: 264/1406, Lr: 0.000000032-0.000158863, Loss: 0.190685, Time/step: 2.306312
+2022-03-03 16:05:00,573:INFO: Loss items: tav_loose_seq:0.191
+2022-03-03 16:08:50,282:INFO: Epoch: 7/10, Step: 364/1406, Lr: 0.000000031-0.000153684, Loss: 0.111841, Time/step: 2.297083
+2022-03-03 16:08:50,284:INFO: Loss items: tav_loose_seq:0.112
+2022-03-03 16:12:39,728:INFO: Epoch: 7/10, Step: 464/1406, Lr: 0.000000030-0.000148554, Loss: 0.216870, Time/step: 2.294440
+2022-03-03 16:12:39,730:INFO: Loss items: tav_loose_seq:0.217
+2022-03-03 16:16:28,646:INFO: Epoch: 7/10, Step: 564/1406, Lr: 0.000000029-0.000143474, Loss: 0.229720, Time/step: 2.289157
+2022-03-03 16:16:28,650:INFO: Loss items: tav_loose_seq:0.230
+2022-03-03 16:20:17,168:INFO: Epoch: 7/10, Step: 664/1406, Lr: 0.000000028-0.000138448, Loss: 0.165063, Time/step: 2.285177
+2022-03-03 16:20:17,171:INFO: Loss items: tav_loose_seq:0.165
+2022-03-03 16:24:09,892:INFO: Epoch: 7/10, Step: 764/1406, Lr: 0.000000027-0.000133477, Loss: 0.242199, Time/step: 2.327208
+2022-03-03 16:24:09,894:INFO: Loss items: tav_loose_seq:0.242
+2022-03-03 16:27:58,431:INFO: Epoch: 7/10, Step: 864/1406, Lr: 0.000000026-0.000128564, Loss: 0.224118, Time/step: 2.285360
+2022-03-03 16:27:58,433:INFO: Loss items: tav_loose_seq:0.224
+2022-03-03 16:31:46,948:INFO: Epoch: 7/10, Step: 964/1406, Lr: 0.000000025-0.000123712, Loss: 0.249014, Time/step: 2.285152
+2022-03-03 16:31:46,950:INFO: Loss items: tav_loose_seq:0.249
+2022-03-03 16:35:35,554:INFO: Epoch: 7/10, Step: 1064/1406, Lr: 0.000000024-0.000118923, Loss: 0.180905, Time/step: 2.286031
+2022-03-03 16:35:35,555:INFO: Loss items: tav_loose_seq:0.181
+2022-03-03 16:39:23,561:INFO: Epoch: 7/10, Step: 1164/1406, Lr: 0.000000023-0.000114200, Loss: 0.219019, Time/step: 2.280047
+2022-03-03 16:39:23,562:INFO: Loss items: tav_loose_seq:0.219
+2022-03-03 16:43:11,517:INFO: Epoch: 7/10, Step: 1264/1406, Lr: 0.000000022-0.000109544, Loss: 0.143007, Time/step: 2.279548
+2022-03-03 16:43:11,519:INFO: Loss items: tav_loose_seq:0.143
+2022-03-03 16:47:01,504:INFO: Epoch: 7/10, Step: 1364/1406, Lr: 0.000000021-0.000104958, Loss: 0.212053, Time/step: 2.299842
+2022-03-03 16:47:01,506:INFO: Loss items: tav_loose_seq:0.212
+2022-03-03 16:48:37,522:INFO: Epoch 7/10 Finished, Train Loss: 0.204288
+2022-03-03 16:48:39,456:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.6
+2022-03-03 16:49:55,170:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 16:49:55,224:INFO: 	>>> Retrival method:t_v  R@1: 0.4380 - R@5: 0.7300 - R@10: 0.8300 - Median R: 2.0
+2022-03-03 16:49:55,274:INFO: 	>>> Retrival method:t_a  R@1: 0.0070 - R@5: 0.0280 - R@10: 0.0490 - Median R: 191.0
+2022-03-03 16:49:55,321:INFO: 	>>> Retrival method:t_va  R@1: 0.4380 - R@5: 0.7310 - R@10: 0.8290 - Median R: 2.0
+2022-03-03 16:49:56,076:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 16:52:17,480:INFO: Epoch: 8/10, Step: 58/1406, Lr: 0.000000020-0.000100445, Loss: 0.178359, Time/step: 1.412363
+2022-03-03 16:52:17,482:INFO: Loss items: tav_loose_seq:0.178
+2022-03-03 16:56:07,530:INFO: Epoch: 8/10, Step: 158/1406, Lr: 0.000000019-0.000096006, Loss: 0.123445, Time/step: 2.300479
+2022-03-03 16:56:07,533:INFO: Loss items: tav_loose_seq:0.123
+2022-03-03 16:59:56,354:INFO: Epoch: 8/10, Step: 258/1406, Lr: 0.000000018-0.000091645, Loss: 0.130348, Time/step: 2.288204
+2022-03-03 16:59:56,356:INFO: Loss items: tav_loose_seq:0.130
+2022-03-03 17:03:42,570:INFO: Epoch: 8/10, Step: 358/1406, Lr: 0.000000017-0.000087362, Loss: 0.152057, Time/step: 2.262133
+2022-03-03 17:03:42,571:INFO: Loss items: tav_loose_seq:0.152
+2022-03-03 17:07:29,254:INFO: Epoch: 8/10, Step: 458/1406, Lr: 0.000000017-0.000083161, Loss: 0.254117, Time/step: 2.266824
+2022-03-03 17:07:29,256:INFO: Loss items: tav_loose_seq:0.254
+2022-03-03 17:11:16,101:INFO: Epoch: 8/10, Step: 558/1406, Lr: 0.000000016-0.000079042, Loss: 0.191740, Time/step: 2.268446
+2022-03-03 17:11:16,103:INFO: Loss items: tav_loose_seq:0.192
+2022-03-03 17:15:03,847:INFO: Epoch: 8/10, Step: 658/1406, Lr: 0.000000015-0.000075010, Loss: 0.151220, Time/step: 2.277438
+2022-03-03 17:15:03,849:INFO: Loss items: tav_loose_seq:0.151
+2022-03-03 17:18:51,557:INFO: Epoch: 8/10, Step: 758/1406, Lr: 0.000000014-0.000071064, Loss: 0.163136, Time/step: 2.277075
+2022-03-03 17:18:51,559:INFO: Loss items: tav_loose_seq:0.163
+2022-03-03 17:22:38,567:INFO: Epoch: 8/10, Step: 858/1406, Lr: 0.000000013-0.000067208, Loss: 0.300395, Time/step: 2.270082
+2022-03-03 17:22:38,569:INFO: Loss items: tav_loose_seq:0.300
+2022-03-03 17:26:26,455:INFO: Epoch: 8/10, Step: 958/1406, Lr: 0.000000013-0.000063443, Loss: 0.107485, Time/step: 2.278848
+2022-03-03 17:26:26,459:INFO: Loss items: tav_loose_seq:0.107
+2022-03-03 17:30:13,878:INFO: Epoch: 8/10, Step: 1058/1406, Lr: 0.000000012-0.000059772, Loss: 0.195078, Time/step: 2.274181
+2022-03-03 17:30:13,880:INFO: Loss items: tav_loose_seq:0.195
+2022-03-03 17:34:01,453:INFO: Epoch: 8/10, Step: 1158/1406, Lr: 0.000000011-0.000056195, Loss: 0.123257, Time/step: 2.275734
+2022-03-03 17:34:01,456:INFO: Loss items: tav_loose_seq:0.123
+2022-03-03 17:37:48,768:INFO: Epoch: 8/10, Step: 1258/1406, Lr: 0.000000011-0.000052715, Loss: 0.130887, Time/step: 2.273121
+2022-03-03 17:37:48,770:INFO: Loss items: tav_loose_seq:0.131
+2022-03-03 17:41:36,810:INFO: Epoch: 8/10, Step: 1358/1406, Lr: 0.000000010-0.000049333, Loss: 0.155797, Time/step: 2.280399
+2022-03-03 17:41:36,813:INFO: Loss items: tav_loose_seq:0.156
+2022-03-03 17:43:26,082:INFO: Epoch 8/10 Finished, Train Loss: 0.165456
+2022-03-03 17:43:27,959:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.7
+2022-03-03 17:44:44,316:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 17:44:44,370:INFO: 	>>> Retrival method:t_v  R@1: 0.4360 - R@5: 0.7270 - R@10: 0.8260 - Median R: 2.0
+2022-03-03 17:44:44,420:INFO: 	>>> Retrival method:t_a  R@1: 0.0070 - R@5: 0.0210 - R@10: 0.0500 - Median R: 196.0
+2022-03-03 17:44:44,467:INFO: 	>>> Retrival method:t_va  R@1: 0.4360 - R@5: 0.7270 - R@10: 0.8260 - Median R: 2.0
+2022-03-03 17:44:45,193:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 17:46:55,203:INFO: Epoch: 9/10, Step: 52/1406, Lr: 0.000000009-0.000046052, Loss: 0.119104, Time/step: 1.298788
+2022-03-03 17:46:55,207:INFO: Loss items: tav_loose_seq:0.119
+2022-03-03 17:50:48,385:INFO: Epoch: 9/10, Step: 152/1406, Lr: 0.000000009-0.000042873, Loss: 0.164341, Time/step: 2.331775
+2022-03-03 17:50:48,387:INFO: Loss items: tav_loose_seq:0.164
+2022-03-03 17:54:41,787:INFO: Epoch: 9/10, Step: 252/1406, Lr: 0.000000008-0.000039797, Loss: 0.083367, Time/step: 2.333999
+2022-03-03 17:54:41,789:INFO: Loss items: tav_loose_seq:0.083
+2022-03-03 17:58:36,509:INFO: Epoch: 9/10, Step: 352/1406, Lr: 0.000000007-0.000036825, Loss: 0.099817, Time/step: 2.347194
+2022-03-03 17:58:36,511:INFO: Loss items: tav_loose_seq:0.100
+2022-03-03 18:02:31,473:INFO: Epoch: 9/10, Step: 452/1406, Lr: 0.000000007-0.000033961, Loss: 0.102730, Time/step: 2.349618
+2022-03-03 18:02:31,475:INFO: Loss items: tav_loose_seq:0.103
+2022-03-03 18:06:26,387:INFO: Epoch: 9/10, Step: 552/1406, Lr: 0.000000006-0.000031204, Loss: 0.100006, Time/step: 2.349116
+2022-03-03 18:06:26,389:INFO: Loss items: tav_loose_seq:0.100
+2022-03-03 18:10:20,807:INFO: Epoch: 9/10, Step: 652/1406, Lr: 0.000000006-0.000028556, Loss: 0.140153, Time/step: 2.344177
+2022-03-03 18:10:20,809:INFO: Loss items: tav_loose_seq:0.140
+2022-03-03 18:14:12,460:INFO: Epoch: 9/10, Step: 752/1406, Lr: 0.000000005-0.000026019, Loss: 0.153381, Time/step: 2.316504
+2022-03-03 18:14:12,461:INFO: Loss items: tav_loose_seq:0.153
+2022-03-03 18:18:02,446:INFO: Epoch: 9/10, Step: 852/1406, Lr: 0.000000005-0.000023594, Loss: 0.181208, Time/step: 2.299841
+2022-03-03 18:18:02,448:INFO: Loss items: tav_loose_seq:0.181
+2022-03-03 18:21:51,895:INFO: Epoch: 9/10, Step: 952/1406, Lr: 0.000000004-0.000021282, Loss: 0.139638, Time/step: 2.294471
+2022-03-03 18:21:51,897:INFO: Loss items: tav_loose_seq:0.140
+2022-03-03 18:25:42,144:INFO: Epoch: 9/10, Step: 1052/1406, Lr: 0.000000004-0.000019084, Loss: 0.129497, Time/step: 2.302466
+2022-03-03 18:25:42,146:INFO: Loss items: tav_loose_seq:0.129
+2022-03-03 18:29:31,430:INFO: Epoch: 9/10, Step: 1152/1406, Lr: 0.000000003-0.000017001, Loss: 0.163250, Time/step: 2.292833
+2022-03-03 18:29:31,432:INFO: Loss items: tav_loose_seq:0.163
+2022-03-03 18:33:21,056:INFO: Epoch: 9/10, Step: 1252/1406, Lr: 0.000000003-0.000015034, Loss: 0.107549, Time/step: 2.296232
+2022-03-03 18:33:21,058:INFO: Loss items: tav_loose_seq:0.108
+2022-03-03 18:37:11,460:INFO: Epoch: 9/10, Step: 1352/1406, Lr: 0.000000003-0.000013185, Loss: 0.145097, Time/step: 2.304020
+2022-03-03 18:37:11,462:INFO: Loss items: tav_loose_seq:0.145
+2022-03-03 18:39:15,682:INFO: Epoch 9/10 Finished, Train Loss: 0.142367
+2022-03-03 18:39:17,631:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.8
+2022-03-03 18:40:34,640:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 18:40:34,695:INFO: 	>>> Retrival method:t_v  R@1: 0.4380 - R@5: 0.7160 - R@10: 0.8220 - Median R: 2.0
+2022-03-03 18:40:34,745:INFO: 	>>> Retrival method:t_a  R@1: 0.0060 - R@5: 0.0280 - R@10: 0.0520 - Median R: 188.5
+2022-03-03 18:40:34,792:INFO: 	>>> Retrival method:t_va  R@1: 0.4350 - R@5: 0.7160 - R@10: 0.8210 - Median R: 2.0
+2022-03-03 18:40:35,502:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 18:42:29,960:INFO: Epoch: 10/10, Step: 46/1406, Lr: 0.000000002-0.000011454, Loss: 0.080771, Time/step: 1.143809
+2022-03-03 18:42:29,963:INFO: Loss items: tav_loose_seq:0.081
+2022-03-03 18:46:23,534:INFO: Epoch: 10/10, Step: 146/1406, Lr: 0.000000002-0.000009843, Loss: 0.100865, Time/step: 2.335709
+2022-03-03 18:46:23,536:INFO: Loss items: tav_loose_seq:0.101
+2022-03-03 18:50:17,692:INFO: Epoch: 10/10, Step: 246/1406, Lr: 0.000000002-0.000008351, Loss: 0.165219, Time/step: 2.341554
+2022-03-03 18:50:17,694:INFO: Loss items: tav_loose_seq:0.165
+2022-03-03 18:54:11,601:INFO: Epoch: 10/10, Step: 346/1406, Lr: 0.000000001-0.000006979, Loss: 0.161175, Time/step: 2.339065
+2022-03-03 18:54:11,603:INFO: Loss items: tav_loose_seq:0.161
+2022-03-03 18:58:04,314:INFO: Epoch: 10/10, Step: 446/1406, Lr: 0.000000001-0.000005729, Loss: 0.076908, Time/step: 2.327107
+2022-03-03 18:58:04,316:INFO: Loss items: tav_loose_seq:0.077
+2022-03-03 19:01:55,985:INFO: Epoch: 10/10, Step: 546/1406, Lr: 0.000000001-0.000004601, Loss: 0.163446, Time/step: 2.316690
+2022-03-03 19:01:55,987:INFO: Loss items: tav_loose_seq:0.163
+2022-03-03 19:05:46,705:INFO: Epoch: 10/10, Step: 646/1406, Lr: 0.000000001-0.000003596, Loss: 0.069237, Time/step: 2.307178
+2022-03-03 19:05:46,707:INFO: Loss items: tav_loose_seq:0.069
+2022-03-03 19:09:37,629:INFO: Epoch: 10/10, Step: 746/1406, Lr: 0.000000001-0.000002714, Loss: 0.089300, Time/step: 2.309211
+2022-03-03 19:09:37,631:INFO: Loss items: tav_loose_seq:0.089
+2022-03-03 19:13:29,272:INFO: Epoch: 10/10, Step: 846/1406, Lr: 0.000000000-0.000001955, Loss: 0.177689, Time/step: 2.316400
+2022-03-03 19:13:29,274:INFO: Loss items: tav_loose_seq:0.178
+2022-03-03 19:17:20,834:INFO: Epoch: 10/10, Step: 946/1406, Lr: 0.000000000-0.000001319, Loss: 0.091281, Time/step: 2.315601
+2022-03-03 19:17:20,836:INFO: Loss items: tav_loose_seq:0.091
+2022-03-03 19:21:12,304:INFO: Epoch: 10/10, Step: 1046/1406, Lr: 0.000000000-0.000000808, Loss: 0.115759, Time/step: 2.314677
+2022-03-03 19:21:12,305:INFO: Loss items: tav_loose_seq:0.116
+2022-03-03 19:25:03,945:INFO: Epoch: 10/10, Step: 1146/1406, Lr: 0.000000000-0.000000422, Loss: 0.106639, Time/step: 2.316393
+2022-03-03 19:25:03,949:INFO: Loss items: tav_loose_seq:0.107
+2022-03-03 19:28:55,126:INFO: Epoch: 10/10, Step: 1246/1406, Lr: 0.000000000-0.000000160, Loss: 0.100700, Time/step: 2.311766
+2022-03-03 19:28:55,128:INFO: Loss items: tav_loose_seq:0.101
+2022-03-03 19:32:46,858:INFO: Epoch: 10/10, Step: 1346/1406, Lr: 0.000000000-0.000000022, Loss: 0.190955, Time/step: 2.317293
+2022-03-03 19:32:46,860:INFO: Loss items: tav_loose_seq:0.191
+2022-03-03 19:35:05,741:INFO: Epoch 10/10 Finished, Train Loss: 0.132264
+2022-03-03 19:35:07,609:INFO: Model saved to ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.9
+2022-03-03 19:36:21,534:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 19:36:21,589:INFO: 	>>> Retrival method:t_v  R@1: 0.4380 - R@5: 0.7220 - R@10: 0.8210 - Median R: 2.0
+2022-03-03 19:36:21,639:INFO: 	>>> Retrival method:t_a  R@1: 0.0060 - R@5: 0.0270 - R@10: 0.0490 - Median R: 190.5
+2022-03-03 19:36:21,692:INFO: 	>>> Retrival method:t_va  R@1: 0.4380 - R@5: 0.7220 - R@10: 0.8210 - Median R: 2.0
+2022-03-03 19:36:22,630:INFO: The best model is: ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2, the R1 is: 0.4630
+2022-03-03 19:36:24,377:INFO: Model loaded from ckpts/ckpt_msrvtt_video_retrieval/for_sota_v2v_9k/pytorch_model.bin.2
+2022-03-03 19:36:24,380:INFO: loading archive file /dataset/28d47491/rld/CLIP4TVA/modules/audio-clip
+2022-03-03 19:36:24,382:INFO: Model config {
+  "normalized": true
+}
+
+2022-03-03 19:36:24,382:INFO: Weight doesn't exsits. /dataset/28d47491/rld/CLIP4TVA/modules/audio-clip/clip-audio.pytorch.bin
+2022-03-03 19:36:24,383:INFO: loading archive file /dataset/28d47491/rld/CLIP4TVA/modules/cross-base
+2022-03-03 19:36:24,384:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "name": "cross-base",
+  "num_attention_heads": 8,
+  "num_hidden_layers": 2,
+  "type_vocab_size": 3,
+  "vocab_size": 512
+}
+
+2022-03-03 19:36:24,384:INFO: Weight doesn't exsits. /dataset/28d47491/rld/CLIP4TVA/modules/cross-base/cross_pytorch_model.bin
+2022-03-03 19:36:24,385:INFO: loading archive file /dataset/28d47491/rld/CLIP4TVA/modules/decoder-base
+2022-03-03 19:36:24,386:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_target_embeddings": 512,
+  "name": "decoder-base",
+  "num_attention_heads": 8,
+  "num_decoder_layers": 1,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 3,
+  "vocab_size": 49410
+}
+
+2022-03-03 19:36:24,386:INFO: Weight doesn't exsits. /dataset/28d47491/rld/CLIP4TVA/modules/decoder-base/decoder_pytorch_model.bin
+2022-03-03 19:36:24,944:WARNING: Stage-One:True, Stage-Two:False
+2022-03-03 19:36:24,944:WARNING: Test retrieval after cross encoder.
+2022-03-03 19:36:24,944:WARNING: Fill blank audio with the most similar audio within batch.
+2022-03-03 19:36:24,945:WARNING: 	 embed_dim: 512
+2022-03-03 19:36:24,945:WARNING: 	 image_resolution: 224
+2022-03-03 19:36:24,945:WARNING: 	 vision_layers: 12
+2022-03-03 19:36:24,946:WARNING: 	 vision_width: 768
+2022-03-03 19:36:24,946:WARNING: 	 vision_patch_size: 32
+2022-03-03 19:36:24,946:WARNING: 	 context_length: 77
+2022-03-03 19:36:24,946:WARNING: 	 vocab_size: 49411
+2022-03-03 19:36:24,947:WARNING: 	 transformer_width: 512
+2022-03-03 19:36:24,947:WARNING: 	 transformer_heads: 8
+2022-03-03 19:36:24,947:WARNING: 	 transformer_layers: 12
+2022-03-03 19:36:24,947:WARNING: 	 loss_type:tav_nce
+2022-03-03 19:36:24,948:WARNING: 	 linear_patch: 2d
+2022-03-03 19:36:24,948:WARNING: 	 cut_top_layer: 0
+2022-03-03 19:36:27,401:WARNING: Set cross_config.num_hidden_layers: 4.
+2022-03-03 19:36:40,204:INFO: --------------------
+2022-03-03 19:36:40,206:INFO: Weights from AudioClip not used in initial_model: 
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2022-03-03 19:36:40,207:WARNING: Training all clip params. 
+2022-03-03 19:36:40,214:WARNING: Total Parameters:256.47M
+2022-03-03 19:36:40,215:WARNING: Total Training Parameters:256.47M
+2022-03-03 19:37:57,243:INFO: 	 Length-T: 1000, Length-V:1000, Length-A:1000
+2022-03-03 19:37:57,297:INFO: 	>>> Retrival method:t_v  R@1: 0.4630 - R@5: 0.7360 - R@10: 0.8350 - Median R: 2.0
+2022-03-03 19:37:57,347:INFO: 	>>> Retrival method:t_a  R@1: 0.0100 - R@5: 0.0570 - R@10: 0.0960 - Median R: 153.5
+2022-03-03 19:37:57,394:INFO: 	>>> Retrival method:t_va  R@1: 0.4620 - R@5: 0.7350 - R@10: 0.8350 - Median R: 2.0
