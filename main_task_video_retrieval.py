@@ -167,16 +167,13 @@ def train_epoch(epoch, args, model, train_dataloader, device, n_gpu, optimizer, 
         video_label_index:[batchsize,1,max_frames]????
         '''
          
-        input_ids, input_mask, segment_ids, video, video_mask, \
-        pairs_masked_text, pairs_token_labels, masked_video, video_labels_index,\
-        audio, audio_mask, masked_audio, audio_labels_index,video_idx  = batch
+        input_ids, input_mask, _, video, video_mask, \
+        _, _, _, _,\
+        audio, audio_mask, masked_audio, _,video_idx  = batch
 
         input_dict = {'input_ids':input_ids,  'attention_mask':input_mask, \
                     'video':video, 'video_mask':video_mask, 
-                    'pairs_masked_text':pairs_masked_text, 'pairs_token_labels':pairs_token_labels,
-                    'masked_video':masked_video, 'video_labels_index':video_labels_index,
-                    'audio':audio, 'audio_mask':audio_mask, 'masked_audio':masked_audio, \
-                    'audio_labels_index':audio_labels_index}
+                    'audio':audio, 'audio_mask':audio_mask, 'masked_audio':masked_audio}
         if args.refine_nce:
             input_dict.update({'video_idx':video_idx})
         

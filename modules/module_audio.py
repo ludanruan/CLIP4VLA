@@ -306,7 +306,8 @@ class VisualTransformer(nn.Module):
         x = x.reshape(x.shape[0], x.shape[1], -1)  # shape = [*, width, grid ** 2]
         x = x.permute(0, 2, 1)  # shape = [*, grid ** 2, width]
         # add token type, bg_token
-       
+        
+        positional_embedding = self.positional_embedding
         if self.with_bg_token:
             x = torch.cat([self.class_embedding.to(x.dtype) + torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device), x,\
                 self.bg_embedding.to(x.dtype) + torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device) ], dim=1)  # shape = [*, grid ** 2 + 1, width]
@@ -316,21 +317,25 @@ class VisualTransformer(nn.Module):
             if self.with_control_token >= 0 and  self.with_control_token <= 1 :# human voice token
                 control_embedding = (1 - self.with_control_token) * self.control_embedding[0,:] + self.with_control_token * self.control_embedding[1,:] 
                 control_embedding = control_embedding.to(x.dtype) + torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device)
-            elif self.with_control_token == 2:
+            elif self.with_control_token == 2: # for pre-training
                 assert token_type is not None #[batchsize,length] or [batchsize*length]
                 if token_type.dim() > 1:
                     token_type = token_type.view(-1)
                 token_type = token_type.to(torch.int64)
-                control_embedding = torch.index_select(self.control_embedding, dim=0, index=token_type).unsqueeze(1).to(x.dtype) + torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device)
+                control_embedding = torch.index_select(self.control_embedding, dim=0, index=token_type).unsqueeze(1).to(x.dtype) + \
+                    torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device)
+            elif self.with_control_token == 3: # for fine-tuning
+                control_embedding = self.control_embedding + torch.zeros(x.shape[0], 2, x.shape[-1], dtype=x.dtype, device=x.device)
+                positional_embedding = torch.cat([self.positional_embedding, self.positional_embedding[-1:,...]], dim=0)
             
             
             x = torch.cat([self.class_embedding.to(x.dtype) + torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device), x,\
-                control_embedding], dim=1)  # shape = [*, grid ** 2 + 1, width]
+                control_embedding.to(x.dtype)], dim=1)  # shape = [*, grid ** 2 + 1, width]
 
         else:
             x = torch.cat([self.class_embedding.to(x.dtype) + torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device), x ], dim=1)  # shape = [*, grid ** 2 + 1, width]
         
-        x = x + self.positional_embedding.to(x.dtype)
+        x = x + positional_embedding.to(x.dtype)
         x = self.ln_pre(x)
        
         x = x.permute(1, 0, 2)  # NLD -> LND
