@@ -21,7 +21,7 @@ weights/
 ./CLIP4VLA_priveta/visualizer
 ./scripts/test.sh
 ./scripts/feature_vatex.sh
-。/scripts/kill.sh
+./scripts/kill.sh
 
 ./dataloaders/*youcook*.py
 ./dataloaders/*clotho*.py
