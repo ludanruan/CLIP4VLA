@@ -1,6 +1,6 @@
 # CLIP4VLA
 <<<<<<< HEAD
-offical code of [CIP4VLA](https://arxiv.org/pdf/2303.06591.pdf)
+The official code base of Accommodating Audio Modality in CLIP for Multimodal Processing [CIP4VLA](https://arxiv.org/pdf/2303.06591.pdf)
 ## Setup
 ```
 conda create -n clip4vla python=3.7
@@ -44,6 +44,3 @@ bash ./scripts/<dataset_task>/finetune_retrieval_vatex_pre_video.sh
 
 
 
-=======
-The official code base of Accommodating Audio Modality in CLIP for Multimodal Processing
->>>>>>> 69eda93e5222adb9b0faca4451a66ba63031ea0e
