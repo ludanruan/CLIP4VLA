@@ -28,3 +28,5 @@ weights/
 ./dataloaders/*activitynet*.py
 ./dataloaders/*audioset.py
 ./dataloaders/*esc50*.py
+
+./ckpts

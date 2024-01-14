@@ -1,4 +1,5 @@
-
+# CLIP4VLA
+<<<<<<< HEAD
 The official code base of Accommodating Audio Modality in CLIP for Multimodal Processing [CIP4VLA](https://arxiv.org/pdf/2303.06591.pdf)
 ## Setup
 ```
@@ -20,12 +21,6 @@ mv softlink.sh audios_16k/
 cd audios_16k
 bash softlink.sh
 ``` 
-
-#### Pre-trained models
-Download the pre-trained model from [Baiduyun](https://pan.baidu.com/s/1mISSzAfbCUvLIQHqxH0K9A?pwd=tp1k) (passward:tp1k)
-
-Place it in `./weights`
-
 
 ## Pre-train
 To pretrain from scratch, first prepare the dataset of Howto100M and Audioset. Then run the following command:
