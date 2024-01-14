@@ -1,8 +1,6 @@
 # #####################frame_extract howto100mt#############################################
 # python data_processor.py  --load_video_into_frames --video_dir /dataset/8219588f/howto100m/videos --npy_dir ../data/Howto100m/raw_frames --input_csv ./data/howto100m/HOWTO100M.csv -n 72 >> ../data/Howto100m/extract_frame.log
 
-# #####################frame_extract activitynet#############################################
-# python data_processor.py --load_video_into_frames --video_dir ../data/activitynet/videos --npy_dir ../data/activitynet/raw_frames -n 72 >> ../data/activitynet/extract_frame.log
 
 # ######################audio_extract vatex#############################################
 python data_processor.py --audio_transfer --video_dir ../data/vatex/videos \

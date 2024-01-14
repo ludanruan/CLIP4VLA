@@ -3,7 +3,7 @@ DATA_PATH=${ROOT_PATH}/data/howto100m
 SAVE_PATH=${ROOT_PATH}/models
 MODEL_PATH=${ROOT_PATH}
 
-INIT_MODEL="../models/pre_trained/AudioClip_audioset+howto_with_initial_self_superised_control_token/pytorch_model.bin.pretrain.23"
+INIT_MODEL=""
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port 29700 \
 ${MODEL_PATH}/main_pretrain.py \
 --do_pretrain --num_thread_reader=4 --epochs=10 --with_self_supervised --init_model ${INIT_MODEL} \
