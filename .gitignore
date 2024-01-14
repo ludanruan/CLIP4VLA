@@ -1,10 +1,9 @@
-ckpts/
-data/
-visualizer/
-modules/RN50x16.pt
-modules/ViT-B-16.pt
-modules/ViT-B-32.pt
-weights/
+./ckpts/
+./data/
+./visualizer/
+./modules/RN50x16.pt
+./modules/ViT-B-16.pt
+./modules/ViT-B-32.pt
 ./scripts/audiocaps_caption
 ./scripts/audiocaps_retrieval
 ./scripts/esc50_classifictaion
