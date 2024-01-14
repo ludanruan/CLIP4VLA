@@ -1,5 +1,4 @@
 # CLIP4VLA
-<<<<<<< HEAD
 The official code base of Accommodating Audio Modality in CLIP for Multimodal Processing [CIP4VLA](https://arxiv.org/pdf/2303.06591.pdf)
 ## Setup
 ```
