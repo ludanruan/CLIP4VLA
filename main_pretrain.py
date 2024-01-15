@@ -26,7 +26,7 @@ torch.distributed.init_process_group(backend="nccl")
 
 global logger
 # torch.autograd.set_detect_anomaly(True)
-def get_args(description='UniVL on Pretrain'):
+def get_args(description='CLIP4VLA on Pretrain'):
     args = get_parser(description)
 
     if args.sampled_use_mil:  # sample from each video, has a higher priority than use_mil.

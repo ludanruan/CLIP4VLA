@@ -17,7 +17,6 @@
 ./scripts/vatex_retrieval/finetune_retrieval_vatex_tv_feat_fuse.sh
 ./scripts/feature_extract.sh
 ./zl_scripts
-./CLIP4VLA_priveta/visualizer
 ./scripts/test.sh
 ./scripts/feature_vatex.sh
 ./scripts/kill.sh

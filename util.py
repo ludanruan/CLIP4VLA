@@ -96,7 +96,7 @@ def get_a_var(obj):
 def parallel_apply(fct, model, inputs, device_ids):
     '''
     ftc:_run_on_single_gpu: function
-    model:UniVL or UnivL_audio
+    model:CLIP4VLA or CLIP4VLA_audio
     inputs: len(input)=6(include aucio) or 4(exceopt audio)
     device_id: gpu ids (0,1,2,3)
     '''
@@ -276,7 +276,7 @@ def get_parser(description):
     parser.add_argument("--do_eval", action='store_true', help="Whether to run eval on the dev set.")
     
     # parser.add_argument("--model_type", type=str, required=True, choices=["no_audio", "audio_feature", "clip_base", "audioclip"], \
-    #     default='no_audio', help="Whether to audio(use UniVL or UniVL_audio_encoder).")
+    #     default='no_audio', help="Whether to audio(use CLIP4VLA or CLIP4VLA_audio_encoder).")
     parser.add_argument("--no_audio_initialize", action='store_true', help="Whether to run eval on the dev set.")
     parser.add_argument("--with_self_supervised", action='store_true', help="Whether to use self superived loss.")
     parser.add_argument("--train_sim_after_cross", action='store_true', help="Whether to train multi-modal transformer")

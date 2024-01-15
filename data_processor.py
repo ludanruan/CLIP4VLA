@@ -71,13 +71,13 @@ def build_audio_csv_wrapper(line, dataset='howto100m'):
     video_dir = "/dataset/8219588f/howto100m/videos"
     video_path = os.path.join(video_dir, video_name)
 
-    audio_dir = "/dataset/28d47491/rld/UniVL/data/howto100m/audios_16k"
+    audio_dir = "/dataset/28d47491/rld/CLIP4VLA/data/howto100m/audios_16k"
     audio_path = os.path.join(audio_dir, video_id+'.wav')
     try:
         video_handle = VideoFileClip(video_path)
         audio_handle = AudioFileClip(audio_path)
         
-        video_file = os.path.join("/dataset/28d47491/rld/UniVL/data/howto100m/videos_fps3", video_name)
+        video_file = os.path.join("/dataset/28d47491/rld/CLIP4VLA/data/howto100m/videos_fps3", video_name)
         cap = cv2.VideoCapture(video_file)
         frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) 
         cap.release()
@@ -818,7 +818,7 @@ def build_catalog(input_dir, output_dir, input_csv, num_jobs=1):
     return
     
 if __name__ == '__main__':
-    description = 'Processors for UniVL_audio '
+    description = 'Processors for CLIP4VLA_audio '
     p = argparse.ArgumentParser(description=description)
     p.add_argument('--audio_transfer', action='store_true',
                    help=('The task will transfer videos to audios that can be read by soundfile'))

@@ -26,7 +26,7 @@ from utils.visualizer import Visualizer
 from torch.cuda.amp import GradScaler
 torch.distributed.init_process_group(backend="nccl")
 
-def get_args(description='UniVL on Caption Task'):
+def get_args(description='CLIP4VLA on Caption Task'):
     
     args = get_parser(description)
     # Check paramenters

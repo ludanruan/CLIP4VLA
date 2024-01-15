@@ -31,7 +31,7 @@ torch.distributed.init_process_group(backend="nccl")
 
 global logger
 
-def get_args(description='UniVL on Retrieval Task'):
+def get_args(description='CLIP4VLA on Retrieval Task'):
     args = get_parser(description)
     
     # Check paramenters
