@@ -21,7 +21,7 @@ cd audios_16k
 bash softlink.sh
 ``` 
 
-## Pre-tCLIP
+## Pre-train
 First download CLIP model(```ViT-B-32.pt```) from [CLIP](https://github.com/openai/CLIP/tree/main), and put it in ```./weight```.  
 To pretrain from scratch, first prepare the dataset of Howto100M and Audioset(follow the above command like preparing MSR-VTT). Then run the following command:
 ```
